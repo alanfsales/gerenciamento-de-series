@@ -8,6 +8,6 @@ public class SerieComedia extends Serie{
 
     @Override
     public void exibirDetalhes() {
-        System.out.println("Comédia: " + titulo + " (" + getTemporadas() + " temporadas)");
+        System.out.println("Comédia: " + titulo + " (" + temporadas + " temporadas)");
     }
 }

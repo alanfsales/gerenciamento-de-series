@@ -8,7 +8,7 @@ public class SerieAcao extends Serie{
 
     @Override
     public void exibirDetalhes() {
-        System.out.println("Ação: " + titulo + " (" + getTemporadas() + " temporadas)");
+        System.out.println("Ação: " + titulo + " (" + temporadas+ " temporadas)");
     }
 
 }
