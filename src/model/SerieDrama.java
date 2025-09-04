@@ -7,12 +7,8 @@ public class SerieDrama extends Serie{
     }
 
     @Override
-    public void exibirInfo() {
-        System.out.println("Drama: " + titulo + " (" + temporadas + " temporadas)");
+    public void exibirDetalhes() {
+        System.out.println("Drama: " + titulo + " (" + getTemporadas() + " temporadas)");
     }
 
-    @Override
-    public void reproduzirAbertura() {
-        System.out.println("Reproduzindo a abertura emocionante e intensa de " + titulo);
-    }
 }

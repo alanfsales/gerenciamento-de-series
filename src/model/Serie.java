@@ -1,5 +1,7 @@
 package model;
 
+import java.util.Objects;
+
 public class Serie {
 
     protected String titulo;
@@ -10,11 +12,31 @@ public class Serie {
         this.temporadas = temporadas;
     }
 
-    public void exibirInfo() {
-        System.out.println("Série: " + titulo + " (" + temporadas + " temporadas)");
+    public String getTitulo() {
+        return titulo;
     }
 
-    public void reproduzirAbertura() {
-        System.out.println("Reproduzindo abertura da série " + titulo);
+    public int getTemporadas() {
+        return temporadas;
+    }
+
+    public void setTemporadas(int temporadas) {
+        this.temporadas = temporadas;
+    }
+
+    public void exibirDetalhes() {
+        System.out.println("Serie: " + titulo + " (" + getTemporadas() + " temporadas)");
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Serie serie = (Serie) o;
+        return Objects.equals(titulo, serie.titulo);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hashCode(titulo);
     }
 }
