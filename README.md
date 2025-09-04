@@ -4,15 +4,11 @@ Este projeto foi desenvolvido como prática para consolidar conceitos de Orienta
 
 ## 🎯 Objetivo
 
-Criar uma classe base Serie e diferentes subclasses (SerieDrama, SerieComedia, etc.), demonstrando:
+Criar um sistema simples de gerenciamento de séries utilizando conceitos de POO como herança, polimorfismo, encapsulamento, e modificadores de acesso. 
 
-Herança: como subclasses podem herdar atributos e comportamentos da classe base.
+O sistema deve permitir adicionar, listar, atualizar e excluir séries. 
 
-Polimorfismo: métodos com o mesmo nome se comportando de formas diferentes dependendo da subclasse.
-
-Reutilização de código: aproveitando construtores e métodos da classe base com super.
-
-Encapsulamento com protected: permitindo acesso controlado a atributos dentro das subclasses.
+Além disso, as séries podem ter diferentes comportamentos dependendo do seu tipo.
 
 ## 📖 O que foi aprendido
 
